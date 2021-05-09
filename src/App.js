@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Jumbotron, Button } from 'react-bootstrap';
+import Component1 from './components/functional/Component1';
 
 class App extends Component {
 	userName = 'RUCHIR BISHT';
@@ -22,7 +23,7 @@ class App extends Component {
 					{/* Displaying Objects in JSX */}
 					{/* {React.createElement('h2', { className: 'app' }, var1.key1)} */}
 					<h2>{data.key1}</h2>
-
+					<Component1 />
 					{/* Use Date and Time  */}
 					<p className='lead'>{date.toDateString()}</p>
 					<Button className='btn btn-success'>Submit</Button>
